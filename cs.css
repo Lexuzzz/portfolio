@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Leckerli+One&family=Lobster+Two:ital,wght@1,700&family=Roboto:wght@500&family=Suez+One&display=swap');
+
+body {
+    width: 100%;
+    margin: 0;
+    background-color: #ffffff;
+    font-family: Trebuchet MS, Helvetica;
+}
+html,body{
+    height: 100%;
+}
+
+header {    
+    width: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 60px;
+    background-color: #282828d8;
+   
+}
+
+
+#logo {
+
+
+    width: 60%;
+
+}
+
+#logo a {
+    color: #ffffff;
+    font-family: 'Suez One', serif;
+    font-size: 1.9em;
+    margin-left: 40px;
+    cursor: pointer;
+    text-decoration: none;
+    line-height: 20px;    
+}
+
+
+
+#navigate {
+    width: 40%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-right: 40px;
+
+}
+
+#navigate a {
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1em;
+    text-decoration: none;
+}
+
+
+
+@media (max-width:1401px) {
+    #logo {
+
+        color: #801354 !important;
+        width: 50% !important;
+
+    }
+
+    #navigate {
+        width: 50% !important;
+    }
+}
+
+@media (max-width:1200px) {
+    #logo {
+
+        color: #61e243 !important;
+        width: 40% !important;
+
+    }
+
+    #navigate {
+        width: 60% !important;
+    }
+}
+
+#intro {
+    width: 100%;
+    height: 100%;
+    background: url(re/299.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end;
+    align-items: center;
+
+}
+
+#home {
+    color: #000000;
+    font-size: 6em;
+    font-family: 'Suez One', serif;
+    letter-spacing: 0.2em;
+    animation: anim 3s 1;
+        
+}
+@media(min-width:1700px)and(max-width:1501px){
+    #intro{
+        background-position: 50% 50%;
+        
+    }
+    
+}
+
+@media(max-width:1500px){
+    #intro{
+        background-position: 30% 50%;
+        
+    }
+    
+}
+
+
+@keyframes anim {
+    0% {
+        color: #00000000;
+        letter-spacing: 100px;
+       
+    }
+    10%{
+        color: #00000000;
+    }
+
+    70% {
+        
+        letter-spacing: 0.2em
+    }
+
+}
+
+#hrabout {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#about {
+    width: 100%;
+    margin: auto;
+}
+
+#zag {
+    margin: 80px auto 0;
+    text-align: center;
+    width: 100%;
+}
+
+#zag span {
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 4em;
+}
+
+#aboutme {
+    width: 80%;
+    margin: 60px auto 0;
+    text-align: justify;
+}
+
+#image1 {
+
+    float: right;
+    margin: 10px 0px 10px 50px;
+
+}
+
+#text_about {
+
+    float: left;
+    font-family: 'Suez One', serif;
+    font-size: 1.5em;
+}
+
+#port {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#zag {
+    margin: 80px auto 0;
+    text-align: center;
+    width: 100%;
+}
+
+#zag span {
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 4em;
+}
+
+#portfolio {
+    margin: 60px auto 0;
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.imgs {
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+#zoomer {
+    margin: 0px;
+    background-color: #262525dc;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 5000;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: none;
+}
+
+#zoomet {
+    max-width: 100%;
+    max-height: 90%;
+}
+
+#swipeL,#swipeR {
+    text-align: center;
+    width: 5%;
+    height: 100%;
+
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+.imgs{
+    
+    border:5px solid #ffffff;
+    border-radius: 3px;
+    transition: 0.8s;
+}
+
+.imgs:hover{
+    border:5px solid #3c3c3c;
+    border-radius: 3px;
+}
+#closeImg{
+    position: fixed;
+    z-index: 9999;
+    top: 7%;
+    right: 5%;
+    transform: translateX(-50%) translateY(-50%);
+    display: none;
+    cursor: pointer;
+}
